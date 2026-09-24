@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy – Textout</title>
+  <title>Privacy Policy & Terms — Textout</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -14,17 +14,34 @@
     }
     header {
       background: #000;
-      padding: 36px 0 28px;
+      padding: 36px 0 22px;
       text-align: center;
+      position: relative;
     }
     header h1 {
       color: #fff;
       font-size: 3rem;
       font-weight: 900;
       letter-spacing: -1px;
-      font-family: 'Segoe UI', Arial, sans-serif;
     }
     header p { color: #aaa; margin-top: 10px; font-size: 0.95rem; }
+    nav.tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 22px;
+    }
+    nav.tabs a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 9px 18px;
+      border-radius: 100px;
+      border: 1px solid #2a2a2a;
+    }
+    nav.tabs a:hover { border-color: #ff4433; color: #fff; }
     .container {
       max-width: 860px;
       margin: 40px auto;
@@ -33,29 +50,53 @@
       box-shadow: 0 2px 16px rgba(0,0,0,0.07);
       padding: 48px 56px;
     }
+    .container + .container { margin-top: 24px; }
     h2 {
       font-size: 1.2rem;
       margin-top: 36px;
       margin-bottom: 10px;
       color: #000;
-      border-left: 4px solid #000;
+      border-left: 4px solid #ff4433;
       padding-left: 12px;
+      scroll-margin-top: 20px;
+    }
+    h1.doc-title {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #000;
+      margin-bottom: 4px;
     }
     p { margin-bottom: 14px; color: #333; }
-    ul { margin: 10px 0 16px 24px; }
-    ul li { margin-bottom: 8px; color: #333; }
-    a { color: #000; text-decoration: underline; }
+    ul, ol { margin: 10px 0 16px 24px; }
+    ul li, ol li { margin-bottom: 8px; color: #333; }
+    a { color: #ff4433; text-decoration: underline; }
     .updated {
       font-size: 0.85rem;
       color: #888;
       margin-bottom: 28px;
       display: block;
     }
-    .contact-box {
+    .contact-box, .deletion-box {
       background: #f4f4f4;
       border-radius: 8px;
       padding: 20px 24px;
       margin-top: 16px;
+    }
+    .deletion-box {
+      border: 1px solid #ffd6d1;
+      background: #fff6f5;
+    }
+    .deletion-box h3 { font-size: 1rem; margin-bottom: 8px; color: #000; }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #ff4433;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 11px 20px;
+      border-radius: 8px;
     }
     footer {
       text-align: center;
@@ -65,7 +106,7 @@
     }
     @media (max-width: 600px) {
       .container { padding: 28px 20px; margin: 16px; }
-      header img { height: 50px; }
+      header h1 { font-size: 2.2rem; }
     }
   </style>
 </head>
@@ -73,104 +114,136 @@
 
 <header>
   <h1>Textout:)</h1>
-  <p>Privacy Policy &mdash; Pixelera Technologies LLP</p>
+  <p>Legal &mdash; Pixelera Technologies LLP</p>
+  <nav class="tabs">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms &amp; Conditions</a>
+    <a href="#delete-account">Delete My Account</a>
+  </nav>
 </header>
 
-<div class="container">
+<!-- ══════════════════════════ PRIVACY POLICY ══════════════════════════ -->
+<div class="container" id="privacy">
 
-  <span class="updated">Last updated: March 23, 2026</span>
+  <h1 class="doc-title">Privacy Policy</h1>
+  <span class="updated">Last updated: September 24, 2026</span>
 
   <p>
-    Welcome to <strong>Textout</strong>, a product of <strong>Pixelera Technologies LLP</strong>, a company based in India. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.
+    Welcome to <strong>Textout</strong>, a social network by <strong>Pixelera Technologies LLP</strong>, based in India. Textout lets you post fully customisable "Chatters," react with Resonance or Comments, and create time-limited Events and Hangouts to get together with people. This Privacy Policy explains what information we collect, how we use it, and the choices you have.
   </p>
   <p>
-    Please read this policy carefully. If you disagree with its terms, please discontinue use of the app.
+    By creating an account or using the app, you agree to the practices described here. If you disagree with this policy, please don't use Textout.
   </p>
 
-  <h2>1. Information We Collect</h2>
-  <p>We collect the following personal information when you register and use Textout:</p>
+  <h2 id="eligibility">1. Age Requirement</h2>
+  <p>
+    Textout is intended for users <strong>18 years of age and older</strong>. By creating an account, you confirm that you are at least 18. We do not knowingly collect personal data from anyone under 18, and if we learn that we have, we will delete that account and its data.
+  </p>
+
+  <h2>2. Information We Collect</h2>
+  <p>We collect the following when you register and use Textout:</p>
   <ul>
-    <li><strong>Full Name</strong> – provided during account registration</li>
-    <li><strong>Email Address</strong> – used for account login and communication</li>
-    <li><strong>Phone Number</strong> – collected during account setup</li>
-    <li><strong>Profile Photo</strong> – uploaded voluntarily by you</li>
-    <li><strong>User-Generated Content</strong> – messages, media, and content you create within the app</li>
-    <li><strong>Device Information</strong> – device type, OS version, and unique device identifiers</li>
-    <li><strong>Usage Data</strong> – app interactions and feature usage collected via analytics tools</li>
-    <li><strong>Location Data</strong> – approximate or precise location, only when you grant permission</li>
-    <li><strong>Payment Information</strong> – transaction data processed through Google Play Billing (we do not store card details)</li>
+    <li><strong>Full Name</strong> — provided during account registration</li>
+    <li><strong>Email Address</strong> — used for login and account communication</li>
+    <li><strong>Phone Number</strong> — collected during account setup</li>
+    <li><strong>Date of Birth</strong> — collected to confirm you meet our 18+ age requirement</li>
+    <li><strong>Profile Photo</strong> — uploaded voluntarily by you</li>
+    <li><strong>Chatters &amp; User-Generated Content</strong> — the posts you create, including any custom colors, backgrounds, images, or media you add to them</li>
+    <li><strong>Resonance &amp; Comment Activity</strong> — reactions and comments you give or receive</li>
+    <li><strong>Events, Hangouts &amp; Memories Data</strong> — events or hangouts you create or join, the invitees/participants, start and end times, content shared within them, and anything you choose to save as a Memory (see Section 6)</li>
+    <li><strong>Device Information</strong> — device type, OS version, and unique device identifiers</li>
+    <li><strong>Usage Data</strong> — app interactions and feature usage, collected via PostHog</li>
+    <li><strong>Crash &amp; Error Data</strong> — collected via Sentry to fix bugs and keep the app stable</li>
+    <li><strong>Location Data</strong> — approximate or precise location, only when you grant permission, used to power "nearby" and location-based features</li>
+    <li><strong>Payment Information</strong> — Textout currently offers no paid features or in-app purchases. If we introduce them in the future, payments will be processed through Google Play Billing and/or Apple In-App Purchase, and we will not store your card details ourselves</li>
   </ul>
 
-  <h2>2. How We Use Your Information</h2>
+  <h2>3. How We Use Your Information</h2>
   <p>We use the information we collect to:</p>
   <ul>
     <li>Create and manage your Textout account</li>
-    <li>Enable chat, messaging, and real-time communication features</li>
-    <li>Send push notifications relevant to your activity</li>
-    <li>Process in-app purchases via Google Play Billing</li>
-    <li>Analyse app performance and improve user experience using PostHog and Sentry</li>
-    <li>Monitor and fix errors and crashes (via Sentry)</li>
+    <li>Operate Chatters, Resonance/Comments, Events, Hangouts, and Memories</li>
+    <li>Power location-based "nearby" features, only when you've granted location permission</li>
+    <li>Send push notifications relevant to your activity (e.g. invitations, reactions, event reminders)</li>
+    <li>Analyse app performance and improve user experience using PostHog</li>
+    <li>Monitor and fix errors and crashes via Sentry</li>
+    <li>Detect, investigate, and act on reports of abuse or policy violations</li>
     <li>Comply with legal obligations under applicable Indian law</li>
   </ul>
+  <p>We currently do not monetize Textout through ads or subscriptions. If that changes, we'll update this policy and, where required, ask for your consent first.</p>
 
-  <h2>3. Third-Party Services</h2>
-  <p>Textout integrates the following third-party services, each with their own privacy policies:</p>
+  <h2>4. Third-Party Services</h2>
+  <p>Textout is built on the following third-party services, each governed by its own privacy policy:</p>
   <ul>
     <li>
-      <strong>Firebase (Google)</strong> – authentication, push notifications, and cloud storage.
+      <strong>Supabase</strong> — our backend database, authentication, and storage provider.
+      <a href="https://supabase.com/privacy" target="_blank">Privacy Policy</a>
+    </li>
+    <li>
+      <strong>Firebase (Google)</strong> — push notifications and supporting cloud services.
       <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>
     </li>
     <li>
-      <strong>Google Play Billing</strong> – in-app purchases and subscription management.
+      <strong>Google Play Billing</strong> — reserved for future in-app purchases and subscription management, not currently active.
       <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
     </li>
     <li>
-      <strong>PostHog</strong> – product analytics to understand how users interact with Textout.
+      <strong>PostHog</strong> — product analytics to understand how users interact with Textout.
       <a href="https://posthog.com/privacy" target="_blank">Privacy Policy</a>
     </li>
     <li>
-      <strong>Sentry</strong> – error tracking and crash reporting to improve app stability.
+      <strong>Sentry</strong> — error tracking and crash reporting to improve app stability.
       <a href="https://sentry.io/privacy/" target="_blank">Privacy Policy</a>
     </li>
   </ul>
+  <p>Any third party we share user data with is required to provide the same or equal protection of your data as described in this policy.</p>
 
-  <h2>4. Permissions We Request</h2>
-  <p>Textout may request the following device permissions:</p>
+  <h2>5. Permissions We Request</h2>
   <ul>
-    <li><strong>Camera</strong> – to capture photos for profile pictures or content</li>
-    <li><strong>Storage / Media</strong> – to read and save images, videos, and audio files</li>
-    <li><strong>Push Notifications</strong> – to send you alerts, messages, and updates</li>
-    <li><strong>Location</strong> – to provide location-based features (only when permitted)</li>
+    <li><strong>Camera</strong> — to capture photos or video for Chatters, Events, or your profile</li>
+    <li><strong>Storage / Media</strong> — to read and save images, videos, and audio files</li>
+    <li><strong>Push Notifications</strong> — to send you alerts, invitations, and updates</li>
+    <li><strong>Location</strong> — to power nearby and location-based features, only when permitted</li>
   </ul>
   <p>You can revoke any of these permissions at any time from your device settings.</p>
 
-  <h2>5. Data Storage and Security</h2>
+  <h2 id="events-privacy">6. Events, Hangouts &amp; Memories</h2>
   <p>
-    Your data is stored on secure servers hosted through Firebase (Google Cloud). We implement industry-standard security measures including encryption in transit (HTTPS/TLS) and at rest. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+    Events and Hangouts are temporary groups with a set start and end time. Posts shared within an Event or Hangout are visible only to its participants and are automatically deleted when the Event or Hangout ends — <strong>unless a user chooses to save specific content as a "Memory"</strong> before it expires. Content saved as a Memory is retained the same way as any other content you post, and remains subject to this Privacy Policy and our Terms &amp; Conditions.
+  </p>
+  <p>
+    Because other participants may also save shared content as their own Memory, deleting your account does not automatically remove copies that other users have separately saved before the Event or Hangout ended.
   </p>
 
-  <h2>6. Data Retention</h2>
+  <h2>7. Data Storage and Security</h2>
   <p>
-    We retain your personal data for as long as your account is active or as needed to provide our services.
-    You may delete your account and all associated data directly from within the app by going to
-    <strong>Settings → scroll to the bottom → tap "Delete Account"</strong>.
-    Your account and all data will be permanently deleted immediately.
-    Alternatively, you may contact us at <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a>
-    and we will process your request within 30 days in accordance with applicable Indian data protection laws.
+    Your data is stored on secure infrastructure via Supabase and Firebase (Google Cloud). We use encryption in transit (HTTPS/TLS) and at rest. No method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
   </p>
 
-  <h2>7. Children's Privacy</h2>
+  <h2>8. Data Retention and Deletion</h2>
   <p>
-    Textout is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal data, we will delete it immediately.
+    We retain your data for as long as your account is active or as needed to provide the service. You can delete your account and its associated data directly from the app: <strong>Settings → scroll to the bottom → tap "Delete Account."</strong> This permanently deletes your account and data immediately.
+  </p>
+  <p>
+    You can also request deletion without the app — see <a href="#delete-account">Delete My Account</a> below, or email <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a>. We process such requests within 30 days, in line with applicable Indian data protection law.
   </p>
 
-  <h2>8. User-Generated Content</h2>
+  <h2>9. User-Generated Content &amp; Reporting</h2>
   <p>
-    Content you create, share, or upload through Textout (including messages, images, and other media) is your responsibility. By using the app, you grant Pixelera Technologies LLP a limited licence to store and display your content solely for the purpose of operating the service. We do not sell your content to third parties.
+    You're responsible for what you post. By using Textout, you grant Pixelera Technologies LLP a limited license to store and display your content solely to operate the service — we do not sell your content to third parties.
+  </p>
+  <p>Every Chatter, comment, and user profile can be reported directly in the app. Here's what happens after you report something:</p>
+  <ol>
+    <li>The reported content or account is flagged for review and, where appropriate, hidden from other users while under review.</li>
+    <li>Our moderation team reviews the report against our Terms &amp; Conditions and community standards.</li>
+    <li>If it violates our policies, we remove the content and may warn, suspend, or permanently ban the account responsible.</li>
+    <li>We aim to respond to reports in a timely manner and will notify you of the outcome where appropriate.</li>
+  </ol>
+  <p>
+    You can also block any user directly from the app. Once blocked, that user can no longer view your profile, Chatters, or contact you, and you won't see their content either.
   </p>
 
-  <h2>9. Your Rights</h2>
-  <p>As a user, you have the right to:</p>
+  <h2>10. Your Rights</h2>
   <ul>
     <li>Access the personal data we hold about you</li>
     <li>Request correction of inaccurate data</li>
@@ -180,36 +253,185 @@
   </ul>
   <p>To exercise any of these rights, contact us at the email address below.</p>
 
-  <h2>10. Changes to This Policy</h2>
+  <h2>11. Children's Privacy</h2>
   <p>
-    We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after any changes constitutes your acceptance of the updated policy.
+    Textout is restricted to users 18 and older and is not directed at children. We do not knowingly collect personal information from anyone under 18. If we become aware that someone under 18 has provided us with personal data, we will delete it promptly.
   </p>
 
-  <h2>11. Contact Us</h2>
-  <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+  <h2>12. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. When we do, we'll revise the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.
+  </p>
+
+  <h2>13. Contact Us</h2>
   <div class="contact-box">
     <p><strong>Pixelera Technologies LLP</strong></p>
     <p>India</p>
     <p>Email: <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a></p>
   </div>
 
-  <h2 id="child-safety">12. Child Safety Policy</h2>
+  <h2 id="child-safety">14. Child Safety Policy (CSAE)</h2>
   <p>
-    Textout has a zero-tolerance policy against child sexual abuse and exploitation (CSAE). We are committed to maintaining a safe environment for all users.
+    Textout has a zero-tolerance policy against child sexual abuse and exploitation (CSAE), regardless of our 18+ age requirement.
   </p>
-  <p>Our commitments include:</p>
   <ul>
-    <li>We do not allow any content that sexually exploits or abuses minors in any form</li>
+    <li>We do not allow any content that sexually exploits or abuses minors, in any form</li>
     <li>We immediately remove any CSAE content upon detection or report</li>
-    <li>We report any CSAE content to the National Center for Missing &amp; Exploited Children (NCMEC) and relevant authorities</li>
+    <li>We report CSAE content to the National Center for Missing &amp; Exploited Children (NCMEC) and relevant authorities</li>
     <li>We permanently ban any user found sharing or promoting CSAE content</li>
     <li>Users can report CSAE content directly through the app</li>
   </ul>
   <p>
-    To report any CSAE content or concerns, contact us immediately at:
-    <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a>
+    To report CSAE content or concerns, contact us immediately at
+    <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a>.
+  </p>
+</div>
+
+<!-- ══════════════════════════ TERMS & CONDITIONS ══════════════════════════ -->
+<div class="container" id="terms">
+
+  <h1 class="doc-title">Terms &amp; Conditions</h1>
+  <span class="updated">Last updated: September 24, 2026</span>
+
+  <p>
+    These Terms &amp; Conditions ("Terms") govern your use of Textout, a social network operated by <strong>Pixelera Technologies LLP</strong> ("Textout," "we," "us"). By creating an account or using the app, you agree to these Terms. If you don't agree, please don't use Textout.
   </p>
 
+  <h2>1. Eligibility</h2>
+  <p>
+    You must be at least 18 years old to create an account or use Textout. By registering, you represent that you meet this requirement and that all information you provide is accurate.
+  </p>
+
+  <h2>2. The Service</h2>
+  <p>Textout offers, among other things:</p>
+  <ul>
+    <li><strong>Chatters</strong> — customisable message/post components where you can style your background color, text color, and layout as you like</li>
+    <li><strong>Resonance</strong> — a reaction system that lets others respond with energy rather than visible public comments</li>
+    <li><strong>Comments</strong> — an alternative mode where others can reply to your Chatters with text</li>
+    <li><strong>Events</strong> — temporary invite-only groups with a set start and end time, where invitees can share posts with each other for that duration</li>
+    <li><strong>Hangouts</strong> — temporary get-togethers where participants can share posts amongst themselves for a limited time</li>
+    <li><strong>Memories</strong> — a way to save specific content from an Event or Hangout before it expires, so it isn't lost when the group ends</li>
+  </ul>
+  <p>We may add, change, or remove features at any time.</p>
+
+  <h2>3. Your Account</h2>
+  <p>
+    You're responsible for keeping your login credentials secure and for all activity under your account. Tell us immediately if you suspect unauthorized use of your account at <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a>.
+  </p>
+
+  <h2>4. Your Content</h2>
+  <p>
+    You own the content you post to Textout ("Your Content"), including your Chatters and anything you share in Events, Hangouts, or save as a Memory. By posting, you grant Pixelera Technologies LLP a limited, non-exclusive, royalty-free license to host, store, and display Your Content solely to operate and provide the Textout service to you and, where applicable, the other users you've shared it with.
+  </p>
+  <p>
+    You're solely responsible for Your Content and confirm that you have the rights to post it and that it doesn't violate any law or third party's rights.
+  </p>
+
+  <h2 id="events-terms">5. Events &amp; Hangouts</h2>
+  <p>
+    Events and Hangouts are temporary groups. Content shared within one is visible only to its participants for the duration you set, and is automatically deleted once the Event or Hangout ends — unless a participant saves it as a Memory before then.
+  </p>
+  <p>
+    If you create an Event or Hangout, you're responsible for who you invite and for the conduct of your invitees within that group, to the extent you control it. Textout is a platform for organising and communicating about get-togethers; <strong>we are not responsible for what happens at any real-world event, hangout, or meeting arranged through the app</strong>, including the safety, conduct, or actions of any participant. Meet people you don't know well in public places and use good judgment.
+  </p>
+  <p>
+    Because participants can independently save shared content as a Memory, we can't guarantee that content is fully erased everywhere once an Event or Hangout ends or once you delete your account.
+  </p>
+
+  <h2>6. Acceptable Use</h2>
+  <p>You agree not to use Textout to:</p>
+  <ul>
+    <li>Post content that is illegal, sexually exploitative of minors, hateful, harassing, threatening, or that promotes violence</li>
+    <li>Impersonate another person or entity, or misrepresent your affiliation with someone</li>
+    <li>Create fake, bulk, or automated accounts, or otherwise manipulate engagement, reactions, or invitations</li>
+    <li>Scrape, harvest, or collect data about other users without their consent</li>
+    <li>Infringe anyone's intellectual property or privacy rights</li>
+    <li>Send unsolicited spam, phishing content, or malware</li>
+    <li>Attempt to interfere with or compromise the security or integrity of the app</li>
+  </ul>
+
+  <h2>7. Content Moderation, Reporting &amp; Blocking</h2>
+  <p>
+    You can report any Chatter, comment, or account directly in the app. Reported content may be hidden pending review. Our team reviews reports and, where content or an account violates these Terms or our community standards, may remove content, and warn, suspend, or permanently ban the account involved. You can also block any user, which prevents them from seeing your content or contacting you, and vice versa. See our <a href="#privacy">Privacy Policy</a> for more detail on how reports are handled.
+  </p>
+  <p>
+    We may remove any content or suspend any account, with or without notice, if we reasonably believe it violates these Terms, applicable law, or puts other users at risk.
+  </p>
+
+  <h2>8. Third-Party Services</h2>
+  <p>
+    Textout relies on third-party infrastructure, including Supabase, Firebase, PostHog, and Sentry, and, in future, Google Play Billing and/or Apple In-App Purchase for any paid features. Your use of those integrated services is also subject to their own terms.
+  </p>
+
+  <h2>9. No Monetization (For Now)</h2>
+  <p>
+    Textout does not currently charge for any feature, offer subscriptions, or display third-party ads. If we introduce paid features in the future, we'll update these Terms and clearly disclose pricing before you're charged.
+  </p>
+
+  <h2>10. Intellectual Property</h2>
+  <p>
+    The Textout name, logo, and app design belong to Pixelera Technologies LLP. Except for Your Content, nothing in these Terms grants you rights to our trademarks, branding, or software.
+  </p>
+
+  <h2>11. Termination</h2>
+  <p>
+    You may stop using Textout and delete your account at any time from Settings. We may suspend or terminate your account if you violate these Terms, misuse the service, or if we're required to by law. Sections that by their nature should survive termination (e.g. content licenses already granted to other users, liability limitations) will continue to apply.
+  </p>
+
+  <h2>12. Disclaimers</h2>
+  <p>
+    Textout is provided "as is" and "as available," without warranties of any kind, express or implied. We don't guarantee the app will be uninterrupted, error-free, or that content posted by other users is accurate, safe, or lawful.
+  </p>
+
+  <h2>13. Limitation of Liability</h2>
+  <p>
+    To the fullest extent permitted by law, Pixelera Technologies LLP will not be liable for any indirect, incidental, special, or consequential damages arising from your use of Textout, including anything arising from Events, Hangouts, or other users' conduct.
+  </p>
+
+  <h2>14. Governing Law</h2>
+  <p>
+    These Terms are governed by the laws of India. Any disputes arising from these Terms or your use of Textout will be subject to the exclusive jurisdiction of the courts of India.
+  </p>
+
+  <h2>15. Grievance Officer</h2>
+  <p>
+    In accordance with applicable Indian intermediary guidelines, you may direct any grievances regarding content on Textout to our grievance contact at <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a>. We aim to acknowledge grievances promptly and resolve them within the timelines required by law.
+  </p>
+
+  <h2>16. Changes to These Terms</h2>
+  <p>
+    We may update these Terms from time to time. We'll revise the "Last updated" date above when we do. Continued use of the app after changes constitutes your acceptance of the updated Terms.
+  </p>
+
+  <h2>17. Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Pixelera Technologies LLP</strong></p>
+    <p>India</p>
+    <p>Email: <a href="mailto:pixeleratech@gmail.com">pixeleratech@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ══════════════════════════ ACCOUNT DELETION (web link required by Google Play) ══════════════════════════ -->
+<div class="container" id="delete-account">
+  <h1 class="doc-title">Delete My Account</h1>
+  <p>
+    You can delete your Textout account and all associated data at any time, in one of two ways:
+  </p>
+
+  <div class="deletion-box">
+    <h3>Option 1 — In the app (instant)</h3>
+    <p style="margin-bottom:0;">Open Textout → <strong>Settings</strong> → scroll to the bottom → tap <strong>"Delete Account."</strong> Your account and data are permanently deleted immediately.</p>
+  </div>
+
+  <div class="deletion-box" style="margin-top:16px;">
+    <h3>Option 2 — Without the app</h3>
+    <p style="margin-bottom:0;">Email <a href="mailto:pixeleratech@gmail.com?subject=Account%20Deletion%20Request">pixeleratech@gmail.com</a> from the email address linked to your Textout account, with the subject "Account Deletion Request." We'll process your request within 30 days.</p>
+    <a class="btn" href="mailto:pixeleratech@gmail.com?subject=Account%20Deletion%20Request">Request Deletion by Email</a>
+  </div>
+
+  <p style="margin-top:20px;">
+    Deleting your account removes your profile, Chatters, comments, Resonance activity, and Memories from Textout. As explained in our <a href="#events-privacy">Privacy Policy</a>, content you shared in an Event or Hangout that another participant separately saved as their own Memory before deletion may not be removed from their copy.
+  </p>
 </div>
 
 <footer>
